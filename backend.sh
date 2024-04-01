@@ -1,3 +1,4 @@
+mysql_root_password=$1
 echo Disable default Nodejs Version Module
 
 dnf module disable nodejs -y
@@ -21,4 +22,4 @@ systemctl daemon-reload
 systemctl enable backend
 systemctl start backend
 dnf install mysql -y
-mysql -h 3.92.227.1 -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h 3.92.227.1 -uroot -p$(mysql_root_password) < /app/schema/backend.sql
