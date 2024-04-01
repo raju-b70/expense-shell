@@ -1,3 +1,6 @@
+print task heading "Install Nginx"
+
+
 dnf install nginx -y
 systemctl enable nginx
 systemctl start nginx
