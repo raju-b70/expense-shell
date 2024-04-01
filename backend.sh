@@ -1,4 +1,4 @@
-mysql_root_password=$1
+mysql_root_password=$1cd
 echo Disable default Nodejs Version Module
 
 dnf module disable nodejs -y
